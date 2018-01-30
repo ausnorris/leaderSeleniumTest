@@ -57,7 +57,7 @@ public class tradingTest {
   @AfterTest
   public void afterTest() {
 	  System.out.println("closing web page: " + homePage);
-	  driver.quit();
+	  //driver.quit();
   }
 
 }
