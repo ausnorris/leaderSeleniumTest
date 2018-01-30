@@ -16,10 +16,10 @@ import org.testng.annotations.AfterTest;
 
 public class tradingTest {
 	private WebDriver driver;	
-	public String homePage = System.getProperty("homePage");
-	public String titleText = System.getProperty("titleText");
-	//public String homePage = "http://10.200.11.52:8080/spring-nanotrader-web";
-	//public String titleText = "Virtualise Me Trader";
+	//public String homePage = System.getProperty("homePage");
+	//public String titleText = System.getProperty("titleText");
+	public String homePage = "http://10.200.11.50:8080/spring-nanotrader-web/";
+	public String titleText = "Virtualise Me Trader";
 	
 	
   @Test
@@ -34,10 +34,13 @@ public class tradingTest {
 	    driver.findElement(By.id("password-input")).clear();
 	    driver.findElement(By.id("password-input")).sendKeys("P@ssw0rd");
 	    driver.findElement(By.id("loginBtn")).click();
+
+	    driver.findElement(By.id("nb-portfolio")).click();
+	    driver.findElement(By.id("nb-trade")).click();
 	    driver.findElement(By.id("nb-trade")).click();
 	    driver.findElement(By.id("quote-input")).clear();
 	    driver.findElement(By.id("quote-input")).sendKeys("vmw");
-	    driver.findElement(By.cssSelector("strong")).click();
+	    //driver.findElement(By.cssSelector("strong")).click();
 	    driver.findElement(By.id("getQuoteBtn")).click();
 	    driver.findElement(By.id("quantity-input")).clear();
 	    driver.findElement(By.id("quantity-input")).sendKeys("10");
