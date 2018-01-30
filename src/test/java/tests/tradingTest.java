@@ -51,6 +51,7 @@ public class tradingTest {
   @BeforeTest
   public void beforeTest() throws Exception {
 	  driver = new RemoteWebDriver(new URL("http://10.10.0.102:4444/wd/hub"), new DesiredCapabilities("firefox", "" , Platform.WINDOWS));
+	  driver.manage().window().maximize();
   }
 
   @AfterTest
