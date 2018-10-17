@@ -43,7 +43,7 @@ public class leaderTest {
   }
   @BeforeTest
   public void beforeTest() throws Exception {
-	  driver = new RemoteWebDriver(new URL("http://10.10.0.102:4444/wd/hub"), new DesiredCapabilities("firefox", "" , Platform.WINDOWS));
+	  driver = new RemoteWebDriver(new URL("http://10.0.10.82:4444/wd/hub"), new DesiredCapabilities("chrome", "" , Platform.WINDOWS));
 	  driver.manage().window().maximize();
   }
 
