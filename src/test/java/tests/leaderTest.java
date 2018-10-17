@@ -29,7 +29,7 @@ public class leaderTest {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		String title = driver.getTitle();				 
 		Assert.assertTrue(title.contains(titleText)); 	
-		driver.findElement(By.xpath("//li[3]")).click();
+		driver.findElement(By.xpath("//li[4]")).click();
 		//driver.findElement(By.xpath("//li[contains(text(),'None')]")).click();
 		//driver.findElement(By.cssSelector("li.player.selected > span.name")).click();
 	    Integer count = 1000;
